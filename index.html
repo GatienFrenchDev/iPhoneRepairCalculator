@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Repair</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="resultat.html" method="get">
+        <div class="form">
+            <select name="modele" id="selecteur-modele" required>
+                <option value="5S">iPhone 5S</option>
+                <option value="6G">iPhone 6</option>
+                <option value="6S">iPhone 6S</option>
+                <option value="6SP">iPhone 6S Plus</option>
+                <option value="7G">iPhone 7</option>
+                <option value="7P">iPhone 7 Plus</option>
+                <option value="8G">iPhone 8</option>
+                <option value="8P">iPhone 8 Plus</option>
+            </select>
+            <div class="choix">
+                <input type="checkbox" id="back" name="back">
+                <label for="back">Arrière à changer</label>
+            </div>
+            <div class="choix">
+                <input type="checkbox" id="front" name="front">
+                <label for="front">Écran à changer</label>
+            </div>
+            <div class="choix">
+                <input type="checkbox" id="batterie" name="batterie">
+                <label for="batterie">Batterie à changer</label>
+            </div>
+            <input type="number" id="prix" name="prix" placeholder="Prix TTC (en €)" required>
+            <button type="submit">Valider</button>
+        </div>
+    </form>
+</body>
+
+</html>
